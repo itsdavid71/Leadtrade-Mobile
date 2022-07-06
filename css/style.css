@@ -65,6 +65,7 @@ main {
 .reg-button {
   background: #fff;
   border-radius: 1000px;
+  font-family: "ProximaNovaBold";
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
