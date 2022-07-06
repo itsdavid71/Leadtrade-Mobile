@@ -222,8 +222,8 @@ form button span {
 
 input[type="checkbox"] {
   position: relative;
-  width: 1.5em;
-  height: 1.5em;
+  width: 20px;
+  height: 20px;
   color: #363839;
   border: 1px solid #bdc1c6;
   border-radius: 4px;
