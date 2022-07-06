@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=480" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="padding">
+          <div class="top">
+            <div class="logo"></div>
+            <a href="#form" class="reg-button">Регистрация</a>
+          </div>
+          <h1>Зарегистрируйся в Leadtrade</h1>
+          <p>
+            Налей 10 лидов на любой оффер и гео
+            <span>и стань участником розыгрыша 5 пар Air Pods</span> среди новых
+            партнёров Leadtrade
+          </p>
+        </div>
+        <img src="img/gift.png" class="gift" alt="" />
+
+        <div class="padding">
+          <h2>А мы поможем <br /><span>заливать в плюс</span></h2>
+
+          <div class="items">
+            <div class="item">
+              <img src="img/ic1.png" alt="icon 1" />
+              <span
+                >Авторские приватные <br />
+                офферы</span
+              >
+            </div>
+            <div class="item">
+              <img src="img/ic2.png" alt="icon 2" />
+              <span
+                >Интеграция <br />
+                по API</span
+              >
+            </div>
+            <div class="item">
+              <img src="img/ic3.png" alt="icon 3" />
+              <span
+                >Агентские TikTok <br />
+                кабинеты</span
+              >
+            </div>
+            <div class="item">
+              <img src="img/ic4.png" alt="icon 4" />
+              <span
+                >Приложения для слива на <br />
+                Gamling и Betting (iOS, Android)
+              </span>
+            </div>
+            <div class="item">
+              <img src="img/ic5.png" alt="icon 5" />
+              <span
+                >Профессиональный <br />
+                саппорт 24/7</span
+              >
+            </div>
+          </div>
+
+          <form action="https://leadtrade.ru/webmaster" id="form">
+            <label for="telegram">
+              <p>Ваш Telegram</p>
+              <input
+                type="text"
+                name="telegram"
+                id="telegram"
+                placeholder="@telegram"
+                class="field"
+                required
+              />
+            </label>
+            <label for="password">
+              <p>Введите пароль</p>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="Ваш пароль"
+                class="field"
+              />
+            </label>
+            <label for="checkPassword">
+              <p>Повторите пароль</p>
+              <input
+                type="password"
+                name="checkPassword"
+                id="checkPassword"
+                required
+                placeholder="Пароль еще раз"
+                class="field"
+              />
+            </label>
+            <label for="rules" class="checkbox">
+              <input type="checkbox" name="rules" required id="rules" />
+              <p>Я принимаю правила системы</p>
+            </label>
+
+            <button type="submit">
+              <span>Зарегистрироваться</span> и чекнуть офферы
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('a[href^="#"]').click(function () {
+          let anchor = $(this).attr("href");
+          $("html, body").animate(
+            {
+              scrollTop: $(anchor).offset().top,
+            },
+            600
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
